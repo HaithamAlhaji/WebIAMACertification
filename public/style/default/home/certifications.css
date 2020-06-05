@@ -1,0 +1,19 @@
+#certifcations .title {
+  font-size: 26px;
+  opacity: 0.6;
+}
+
+#certifcations .download {
+  background-color: #2e97b1;
+  color: white;
+}
+
+#certifcations .certifications .name {
+  font-weight: bold;
+  text-align: center;
+}
+
+#certifcations .certifications .description {
+  text-align: justify;
+  font-size: 12px;
+}

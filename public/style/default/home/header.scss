@@ -1,0 +1,53 @@
+@import "../variables";
+header {
+  .jumbotron {
+    background-color: $color1;
+    margin: 0;
+  }
+  #logo {
+    background-color: $color2;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px 0 5px 0;
+
+    #logoImage {
+      height: 100px;
+      width: 200px;
+      background-image: url("/img/logo_white.png");
+      background-position: center;
+      background-clip: content-box;
+      background-origin: content-box;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  #agents {
+    height: 100px;
+    width: 200px;
+    background-image: url("/img/agents.png");
+    background-position: center;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  color: white;
+  #description {
+    opacity: 0.5;
+  }
+  #search {
+    direction: ltr;
+    div {
+      input {
+        font-size: 22px;
+      }
+      div {
+        button {
+          height: 100%;
+          direction: rtl;
+        }
+      }
+    }
+  }
+}

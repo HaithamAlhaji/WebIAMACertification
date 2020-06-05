@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="/style/{{defaultStyle}}/home/index.css">
+<div id="index">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                {{!-- <div class="title">نراكم في الملتقى القادم :)</div> --}}
+                {{!-- <div class="description">
+                    <ul>
+                        <li>صلاحية الشهادة، عامل مهم لزيادة موثوقية الملتقى</li>
+
+                        <li>الأستعلام عن صلاحية الرقم التسلسلي يصب في خدمة الجهات التي يرفق اليها الشهادة</li>
+                        <li>في حالة وجود أي مشكلة يرجى التواصل مع الفريق التقني للملتقى على
+                            <a target="_blank" href="https://www.instagram.com/haitham_alhaji/"
+                                style="font-weight:bolder">
+                                <i class="fas fa-share-square"></i> Haitham Alhaji
+                            </a>.
+                        </li>
+
+                    </ul>
+                </div> --}}
+                <div id="agents">
+
+                </div>
+                <div class="content">
+                    {{#ifEquals verify "true"}}
+                    <div class="alert alert-success">الشهادة موثوقة، وتم التعرف عليها بتاريخ {{certificationCreation}}
+                        وتم تخوليها
+                        الى {{clientName}}
+                        بعنوان
+                        {{certificationName}}
+                    </div>
+                    {{/ifEquals}}
+                    {{#ifEquals verify "false"}}
+                    <div class="alert alert-danger">لم يتم التعرف على الرقم التسلسلي !</div>
+                    {{/ifEquals}}
+                    <form method="post" action="/verifyCertification">
+                        <div class="row">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                    <input name="serial_number" class="form-control" type="text"
+                                        placeholder="YLF05PAR50000" required maxlength="16" minlength="9"
+                                        style="direction: ltr;">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Serial Number</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4"></div>
+                        </div>
+
+
+                        <button class="btn btn-block " type="submit"
+                            style="background-color:#203468;color:white;">Check</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

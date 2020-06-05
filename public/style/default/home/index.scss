@@ -1,0 +1,40 @@
+#index > div > div {
+  padding: 5px;
+}
+#index {
+  div {
+    div {
+      div.container {
+        background-color: white;
+        border: 1px solid #ccc;
+
+        div.title {
+          font-size: 2rem;
+        }
+        div.description {
+          padding-top: 1rem;
+          font-size: 0.8rem;
+        }
+        div.content {
+          button {
+            margin: 1rem 0rem;
+          }
+          div.input-group {
+            margin: 5px auto;
+          }
+        }
+      }
+    }
+  }
+  #agents {
+    height: 100px;
+    width: 200px;
+    background-image: url("/img/agents.png");
+    background-position: center;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,12 @@
+footer {
+  color: white;
+  opacity: 0.8;
+}
+
+footer .row {
+  margin: 0;
+}
+
+footer .row .container {
+  padding: 0;
+}
